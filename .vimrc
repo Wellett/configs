@@ -5,7 +5,7 @@ inoremap jk <ESC>
 "I'm not actually sure what the leader key is?
 ""let mapleader = "<Space>"
 
-"set umbering and relative nubering, seems like a good thing
+"set numbering and relative nubering, seems like a good thing
 set nu
 set rnu
 
@@ -23,6 +23,6 @@ set expandtab
 "Some color settings...
 set t_Co=256
 set background=dark
-"A couple of interesting options: focuspoint, Kuroi...
-colorscheme focuspoint
+"A couple of interesting options: focuspoint, kuroi...
+colorscheme kuroi
 
