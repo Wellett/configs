@@ -1,0 +1,11 @@
+Probably could come up with a better way of doing this
+This is a file to store a few useful commands etc, that can be difficult ot remember
+
+TERMINAL COMMANDS   
+ls | wc -l      pipleines the output of ls into wc, a word counting program
+                option -l counts lines
+
+
+pushd           pushes directory onto directory stack
+popd            pops directory off directory stack
+dirs -v         displays directories in the stack, -v formats nicely
