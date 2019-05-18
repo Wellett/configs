@@ -9,6 +9,9 @@ inoremap jk <ESC>
 set nu
 set rnu
 
+"use autoindent I feel like this should be just standard
+set autoindent
+
 "Some whitespace settings
 "In general keep shiftwidth == softtabstop == tabstop
 "tabstop: width of a tab character 
