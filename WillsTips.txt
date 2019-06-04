@@ -9,3 +9,20 @@ ls | wc -l      pipleines the output of ls into wc, a word counting program
 pushd           pushes directory onto directory stack
 popd            pops directory off directory stack
 dirs -v         displays directories in the stack, -v formats nicely
+
+ALIAS
+This is a damn handy little trick...
+alias let's you temporarily define a command 
+eg: alias rem="ls | wc -l | awk '{print \$1/3}'"
+which is a complicated little command to allow me to easily see how many 
+assignments I have left to mark haha
+
+SOME VIM TRICKS
+Hopefully these will become seccond nature with practise...
+A - append the current line. 
+U - undo for the whole line.
+dw - great combination, delete word
+c - "change end" to change until the end of a word
+
+
+
