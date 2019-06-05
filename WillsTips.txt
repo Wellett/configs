@@ -9,3 +9,15 @@ ls | wc -l      pipleines the output of ls into wc, a word counting program
 pushd           pushes directory onto directory stack
 popd            pops directory off directory stack
 dirs -v         displays directories in the stack, -v formats nicely
+
+
+VIM
+/ to search
+:s - substitute command
+:s/old/new/g - subsititute old with new 
+:s/old/new/gc - substitiute with prompt
+:%s/old/new/g - substitute for the whole file
+
+:! - to use an external command
+:hls - highlighted search
+:incsearch - show parial matches
