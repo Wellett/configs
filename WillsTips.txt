@@ -11,6 +11,13 @@ popd            pops directory off directory stack
 dirs -v         displays directories in the stack, -v formats nicely
 
 
+ALIAS
+This is a damn handy little trick...
+alias let's you temporarily define a command 
+eg: alias rem="ls | wc -l | awk '{print \$1/3}'"
+which is a complicated little command to allow me to easily see how many 
+assignments I have left to mark haha
+
 VIM
 / to search
 :s - substitute command
@@ -21,3 +28,14 @@ VIM
 :! - to use an external command
 :hls - highlighted search
 :incsearch - show parial matches
+
+A   - append the current line. 
+U   - undo for the whole line.
+dw  - great combination, delete word
+cw  - "change word" to change until the end of a word
+    - basically just dw i
+s   - like r, except you stay in insert mode. 
+S   - replace line. That's a nice one. 
+
+
+
