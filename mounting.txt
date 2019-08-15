@@ -1,0 +1,10 @@
+Just a quick little note re: mounting drives
+
+mount command can be used for any network mounting
+- see man mount
+
+This works on a network, and can be used to mount network drives to the subsystem
+
+eg: mounting gi network drives can be achieved easily with 
+sudo mount -t drvfs U: /mnt/will
+(this mounts the U: drive to will)
