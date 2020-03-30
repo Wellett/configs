@@ -9,3 +9,5 @@
     prompt = false
 [alias]
     update = add -u
+[mergetool]
+    keepBackup = false
