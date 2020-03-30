@@ -1,0 +1,11 @@
+[user] 
+    name = William Ellett   
+    email = william.ellett@greyinnovation.com
+[core] 
+    editor = vim
+[diff] 
+    tool = vimdiff
+[difftool] 
+    prompt = false
+[alias]
+    update = add -u
