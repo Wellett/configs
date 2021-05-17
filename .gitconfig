@@ -1,10 +1,12 @@
-[user] 
-    name = William Ellett   
-    email = william.ellett@greyinnovation.com
+[user]
+    name = William Ellett
+	email = w.ellett@tektindustries.com
 [core] 
     editor = vim
 [diff] 
     tool = vimdiff
+[merge]
+	tool = vimdiff
 [difftool] 
     prompt = false
 [alias]
