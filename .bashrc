@@ -116,8 +116,9 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# change open directory
-cd /mnt/d/Repositories
 
-# add an alias for sublime text
-alias sublime="/mnt/c/Program\ Files/Sublime\ Text\ 3/sublime_text.exe"
+export PATH=$PATH:/home/wellett/.local/bin
+
+# Alias for a rather elegant way to keep dotfiles in a headless repo
+# Possibly should migrate this to .bash_aliases??
+alias config='git --git-dir=/home/wellett/.config --work-tree=/home/wellett'
