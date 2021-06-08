@@ -116,6 +116,7 @@ if ! shopt -oq posix; then
   fi
 fi
 
+
 export PATH=$PATH:/home/wellett/.local/bin
 
 # Alias for a rather elegant way to keep dotfiles in a headless repo
