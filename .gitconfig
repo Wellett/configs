@@ -1,6 +1,6 @@
 [user]
     name = William Ellett
-	email = w.ellett@tektindustries.com
+	email = williamjellett@gmail.com
 [core] 
     editor = vim
     excludesfile = ~/.global_gitignore
