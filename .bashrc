@@ -120,5 +120,7 @@ fi
 export PATH=$PATH:/home/wellett/.local/bin
 
 # Alias for a rather elegant way to keep dotfiles in a headless repo
-# Possibly should migrate this to .bash_aliases??
-alias config='git --git-dir=/home/wellett/.config --work-tree=/home/wellett'
+# For now keeping this here because it is general for all systems
+# .bash_aliases is being used for specific system aliases
+alias config='git --git-dir=$HOME/.config --work-tree=$HOME'
+
