@@ -70,3 +70,22 @@ nnoremap KP :cp<CR>
 
 "command to use make from cmd
 nnoremap <F3> :set makeprg=cmd.exe\ /C\ make<CR>
+
+"Automate installation of Vim Plug
+let data_dir = '~/.vim'
+if empty(glob(data_dir . '/autoload/plug.vim'))
+  silent execute "!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs 
+  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
+" Plugins
+let plugin_dir = '~/.vim/VimPluginDir'
+call plug#begin(plugin_dir)
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+call plug#end()
+
+"Vim Airline Theme
+let g:airline_theme='jellybeans'
+            
