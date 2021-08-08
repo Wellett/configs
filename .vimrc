@@ -72,6 +72,7 @@ nnoremap KP :cp<CR>
 nnoremap <F3> :set makeprg=cmd.exe\ /C\ make<CR>
 
 "Automate installation of Vim Plug
+"Might need some tweaks
 let data_dir = '~/.vim'
 if empty(glob(data_dir . '/autoload/plug.vim'))
   silent execute "!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs 
@@ -84,8 +85,9 @@ let plugin_dir = '~/.vim/VimPluginDir'
 call plug#begin(plugin_dir)
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'tpope/vim-fugitive'
 call plug#end()
 
 "Vim Airline Theme
 let g:airline_theme='jellybeans'
-            
+let g:airline#extensions#whitespace#enabled = 0
