@@ -85,6 +85,7 @@ call plug#begin(plugin_dir)
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-fugitive'
+Plug 'junegunn/gv.vim'
 call plug#end()
 
 "Vim Airline Theme
