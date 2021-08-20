@@ -2,7 +2,7 @@
 # Basic installation script to automate configuration set-up
 # Currently ripped almost straight from Atlassian
 
-configURL="https://github.com/Wellett/configs.git"
+configURL="git@github.com:Wellett/configs.git"
 
 git clone --bare $configURL $HOME/.config
 
