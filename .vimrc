@@ -86,6 +86,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-fugitive'
 Plug 'junegunn/gv.vim'
+Plug 'neovimhaskell/haskell-vim'
 call plug#end()
 
 "Vim Airline Theme
