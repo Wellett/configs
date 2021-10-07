@@ -12,6 +12,12 @@ set number
 set relativenumber
 noremap <F2> :set relativenumber!<CR>
 
+"Experimental new mappings for frequent searching tasks
+"internal search
+noremap <F3> yiw/<C-r>"<CR> 
+"external search - don't carriage return, in case I want to change the scope 
+noremap <F4> yiw:grep -r <C-r>" src
+
 "use autoindent: I feel like this should be just standard
 set autoindent
 
@@ -70,7 +76,7 @@ nnoremap KN :cn<CR>
 nnoremap KP :cp<CR>
 
 "command to use make from cmd
-nnoremap <F3> :set makeprg=cmd.exe\ /C\ make<CR>
+nnoremap <F5> :set makeprg=cmd.exe\ /C\ make<CR>
 
 "Automate installation of Vim Plug
 "Might need some tweaks
