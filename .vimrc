@@ -55,10 +55,10 @@ nnoremap zzi :set foldmethod=indent<CR>
 set colorcolumn=80,100 
 
 "Setting for netrw opening files into a vertical split"
-let g:netrw_liststyle = 3 "tree view
-let g:netrw_browse_split = 4 "open in previous window
-let g:netrw_altv = 1 "opens to right
-let g:netrw_winsize = 65 "adjustment of screen realestate
+"let g:netrw_liststyle = 3 "tree view
+"let g:netrw_browse_split = 4 "open in previous window
+"let g:netrw_altv = 1 "opens to right
+"let g:netrw_winsize = 65 "adjustment of screen realestate
 
 "Some settings for vim splits - actually not sure if I like this better...
 set splitright
