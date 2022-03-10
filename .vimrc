@@ -2,9 +2,6 @@
 inoremap jk <ESC>
 vnoremap jk <Esc>
 
-"Not a terrible idea... not 100% sure I want to change the leader to space tho
-"let mapleader = "<Space>"
-
 "set numbering and relative as the default nubering configuration
 "F2 toggles relative numbering
 set number
@@ -12,10 +9,14 @@ set relativenumber
 noremap <F2> :set relativenumber!<CR>
 
 "Experimental new mappings for frequent searching tasks
-"internal search
-noremap <F3> yiw/<C-r>"<CR> 
+"internal search deprecated, use * instead
+" noremap <F3> yiw/<C-r>"<CR> 
 "external search - don't carriage return, in case I want to change the scope 
-noremap <F4> yiw:grep -r <C-r>" src
+noremap <F3> yiw:grep -r <C-r>" src
+
+"Change the word under the cursor with the last yank
+noremap <F4> ciw<C-r>0<Esc>
+
 
 "use autoindent: I feel like this should be just standard
 set autoindent
