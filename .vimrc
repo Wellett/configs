@@ -15,7 +15,7 @@ noremap <F2> :set relativenumber!<CR>
 noremap <F3> yiw:grep -r <C-r>" src
 
 "Change the word under the cursor with the last yank
-noremap <F4> ciw<C-r>0<Esc>
+noremap <leader>r ciw<C-r>0<Esc>
 
 
 "use autoindent: I feel like this should be just standard
