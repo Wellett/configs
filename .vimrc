@@ -1,7 +1,6 @@
 "Escape mappings
 inoremap jk <ESC>
 vnoremap jk <Esc>
-tnoremap <Esc> <C-\><C-n>
 
 "Not a terrible idea... not 100% sure I want to change the leader to space tho
 "let mapleader = "<Space>"
