@@ -1,15 +1,22 @@
-"remap the esc key
-"I think the jk option seems pretty good?
+"Escape mappings
 inoremap jk <ESC>
-
-"Not a terrible idea... not 100% sure I want to change the leader to space tho
-"let mapleader = "<Space>"
+vnoremap jk <Esc>
 
 "set numbering and relative as the default nubering configuration
 "F2 toggles relative numbering
 set number
 set relativenumber
 noremap <F2> :set relativenumber!<CR>
+
+"Experimental new mappings for frequent searching tasks
+"internal search deprecated, use * instead
+" noremap <F3> yiw/<C-r>"<CR> 
+"external search - don't carriage return, in case I want to change the scope 
+noremap <F3> yiw:grep -r <C-r>" src
+
+"Change the word under the cursor with the last yank
+noremap <leader>r ciw<C-r>0<Esc>
+
 
 "use autoindent: I feel like this should be just standard
 set autoindent
@@ -56,11 +63,11 @@ set colorcolumn=80,100
 
 "Setting for netrw opening files into a vertical split"
 let g:netrw_liststyle = 3 "tree view
-let g:netrw_browse_split = 4 "open in previous window
-let g:netrw_altv = 1 "opens to right
-let g:netrw_winsize = 65 "adjustment of screen realestate
+"let g:netrw_browse_split = 4 "open in previous window
+"let g:netrw_altv = 1 "opens to right
+"let g:netrw_winsize = 65 "adjustment of screen realestate
 
-"Some settings for vim splits - actually not sure if I like this better...
+"Some settings for vim splits - kind of arbitratry
 set splitright
 set splitbelow
 
@@ -69,7 +76,7 @@ nnoremap KN :cn<CR>
 nnoremap KP :cp<CR>
 
 "command to use make from cmd
-nnoremap <F3> :set makeprg=cmd.exe\ /C\ make<CR>
+nnoremap <F5> :set makeprg=cmd.exe\ /C\ make<CR>
 
 "Automate installation of Vim Plug
 "Might need some tweaks

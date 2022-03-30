@@ -1,2 +1,6 @@
+#ignore for working with tag files
 tags
-*.swp
+#ignores useful for working with vim
+*.swp 
+*.swo
+*.vim 
