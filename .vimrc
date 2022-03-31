@@ -87,6 +87,7 @@ if empty(glob(data_dir . '/autoload/plug.vim'))
 endif
 
 " Plugins
+" Using Vim-Plug
 let plugin_dir = '~/.vim/VimPluginDir'
 call plug#begin(plugin_dir)
 Plug 'vim-airline/vim-airline'
@@ -94,6 +95,8 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-fugitive'
 Plug 'junegunn/gv.vim'
 Plug 'neovimhaskell/haskell-vim'
+Plug 'vimwiki/vimwiki'
+Plug 'michal-h21/vimwiki-sync'
 call plug#end()
 
 "Vim Airline Theme
