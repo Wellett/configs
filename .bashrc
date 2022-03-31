@@ -124,3 +124,8 @@ export PATH=$PATH:/home/wellett/.local/bin
 # .bash_aliases is being used for specific system aliases
 alias config='git --git-dir=$HOME/.config --work-tree=$HOME'
 
+# Alias for updating vimwiki
+# might work on this further
+alias wiki='git -C $HOME/vimwiki'
+
+
