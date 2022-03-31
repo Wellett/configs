@@ -4,7 +4,13 @@
 
 configURL="git@github.com:Wellett/configs.git"
 
+wikiURL="git@github.com:Wellett/wiki.git"
+
+# Set up configs Repo
 git clone --bare $configURL $HOME/.config
+
+#set up wiki repo
+git clone $wikiURL $HOME/vimwiki
 
 function config {
    /usr/bin/git --git-dir=$HOME/.config/ --work-tree=$HOME $@
