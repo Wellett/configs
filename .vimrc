@@ -38,6 +38,8 @@ autocmd bufwritepost .vimrc source $MYVIMRC
 "Vimwiki indents
 let g:vimwiki_folding='custom'
 autocmd BufRead,BufNewFile *.wiki set fdm=indent fml=3
+"Vimwiki auto wrapping
+autocmd BufRead,BufNewFile *.wiki set textwidth=100
 
 "Some search settings
 set ignorecase
