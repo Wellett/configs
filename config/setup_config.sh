@@ -28,3 +28,7 @@ config config status.showUntrackedFiles no
 
 # Remove config_backup if empty
 rmdir --ignore-fail-on-non-empty config_backup 
+
+# should we source ~/.bashrc at the end of this so that aliases take effect?
+# Do we need to?
+# Can we change master to main?
