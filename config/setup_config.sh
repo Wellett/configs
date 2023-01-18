@@ -7,13 +7,13 @@ configURL="git@github.com:Wellett/configs.git"
 wikiURL="git@github.com:Wellett/wiki.git"
 
 # Set up configs Repo
-git clone --bare $configURL $HOME/.config
+git clone --bare $configURL $HOME/.config_repo
 
 #set up wiki repo
 git clone $wikiURL $HOME/vimwiki
 
 function config {
-   /usr/bin/git --git-dir=$HOME/.config/ --work-tree=$HOME $@
+   /usr/bin/git --git-dir=$HOME/.config_repo/ --work-tree=$HOME $@
 }
 mkdir -p config_backup
 config checkout
@@ -29,6 +29,7 @@ config config status.showUntrackedFiles no
 # Remove config_backup if empty
 rmdir --ignore-fail-on-non-empty config_backup 
 
+#TODO
 # should we source ~/.bashrc at the end of this so that aliases take effect?
 # Do we need to?
 # Can we change master to main?
