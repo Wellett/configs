@@ -8,6 +8,8 @@
     tool = vimdiff
 [merge]
 	tool = vimdiff
+[pull]
+    rebase=true
 [difftool] 
     prompt = false
 [alias]
@@ -16,3 +18,4 @@
     keepBackup = false
 [rebase] 
     autosquash = true
+
