@@ -65,8 +65,8 @@ set colorcolumn=80,100
 
 "Setting for netrw opening files into a vertical split"
 let g:netrw_liststyle = 3 "tree view
+let g:netrw_altv = 1 "opens to right
 "let g:netrw_browse_split = 4 "open in previous window
-"let g:netrw_altv = 1 "opens to right
 "let g:netrw_winsize = 65 "adjustment of screen realestate
 
 "Some settings for vim splits - kind of arbitratry
@@ -90,15 +90,36 @@ endif
 
 " Plugins
 " Using Vim-Plug
+" run PlugIntall to install initially or PlugUpdate to update
 let plugin_dir = '~/.vim/VimPluginDir'
 call plug#begin(plugin_dir)
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-Plug 'tpope/vim-fugitive'
-Plug 'junegunn/gv.vim'
-Plug 'neovimhaskell/haskell-vim'
-Plug 'vimwiki/vimwiki'
-Plug 'michal-h21/vimwiki-sync'
+" Fancy looking dock bar
+Plug 'vim-airline/vim-airline'                          
+" ^and a colourscheme for it
+Plug 'vim-airline/vim-airline-themes'                   
+
+" Git integration
+Plug 'tpope/vim-fugitive'                               
+" Git commit browser - dependant on fugative
+Plug 'junegunn/gv.vim'                                  
+
+" Haskell support
+Plug 'neovimhaskell/haskell-vim'                        
+
+" Wiki and diary integration in vim 
+Plug 'vimwiki/vimwiki'                                  
+" Sync tool for vimwiki - requires vimwiki
+Plug 'michal-h21/vimwiki-sync'                          
+
+" fuzzy search finder
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }     
+Plug 'junegunn/fzf.vim'
+
+" Asynchronous Linting Engine
+Plug 'dense-analysis/ale'                               
+
+" Python Code Formatter
+Plug 'psf/black', {'branch': 'stable'}
 call plug#end()
 
 "Vim Airline Theme
