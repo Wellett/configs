@@ -47,11 +47,6 @@ set smartcase "Changes to case-sensitive search when capitals are used
 set hls
 
 
-"Some color settings...
-set t_Co=256
-set background=dark
-"A couple of interesting options: focuspoint, kuroi...
-colorscheme kuroi
 
 "These settings are for vimwiki..."
 set nocompatible
@@ -120,7 +115,20 @@ Plug 'dense-analysis/ale'
 
 " Python Code Formatter
 Plug 'psf/black', {'branch': 'stable'}
+
+" Some vim colourschemes to try
+Plug 'sainnhe/gruvbox-material', { 'as': 'gruvbox-material'}
+Plug 'sainnhe/everforest', { 'as': 'everforest'}
+Plug 'sainnhe/sonokai', { 'as': 'sonokai'}
+Plug 'morhetz/gruvbox', { 'as': 'gruvbox' }
+
 call plug#end()
+
+"Some color settings...
+set t_Co=256
+set background=dark
+"A couple of interesting options: focuspoint, kuroi...
+colorscheme sonokai
 
 "Vim Airline Theme
 let g:airline_theme='jellybeans'
