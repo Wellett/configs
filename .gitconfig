@@ -18,4 +18,6 @@
     keepBackup = false
 [rebase] 
     autosquash = true
+[init]
+    defaultBranch = main
 
