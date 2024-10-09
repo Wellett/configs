@@ -20,4 +20,6 @@
     autosquash = true
 [init]
     defaultBranch = main
-
+[includeIf "gitdir:~/repositories/sensorfact/"]
+    path = ~/.gitconfig-sensorfact
+    
