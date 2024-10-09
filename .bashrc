@@ -129,3 +129,4 @@ alias config='git --git-dir=$HOME/.config_repo --work-tree=$HOME'
 alias wiki='git -C $HOME/vimwiki'
 
 
+. "$HOME/.cargo/env"
