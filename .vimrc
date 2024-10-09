@@ -3,20 +3,14 @@ inoremap jk <ESC>
 vnoremap jk <Esc>
 
 "set numbering and relative as the default nubering configuration
-"F2 toggles relative numbering
+"F2 toggles relative numbering, F3 toggles numbering
 set number
 set relativenumber
 noremap <F2> :set relativenumber!<CR>
-
-"Experimental new mappings for frequent searching tasks
-"internal search deprecated, use * instead
-" noremap <F3> yiw/<C-r>"<CR> 
-"external search - don't carriage return, in case I want to change the scope 
-noremap <F3> yiw:grep -r <C-r>" src
+noremap <F3> :set number!<CR>
 
 "Change the word under the cursor with the last yank
 noremap <leader>r ciw<C-r>0<Esc>
-
 
 "use autoindent: I feel like this should be just standard
 set autoindent
@@ -45,8 +39,6 @@ autocmd BufRead,BufNewFile *.wiki set textwidth=100
 set ignorecase
 set smartcase "Changes to case-sensitive search when capitals are used
 set hls
-
-
 
 "These settings are for vimwiki..."
 set nocompatible
