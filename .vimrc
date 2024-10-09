@@ -108,6 +108,9 @@ Plug 'dense-analysis/ale'
 " Python Code Formatter
 Plug 'psf/black', {'branch': 'stable'}
 
+" Github Copilot
+Plug 'github/copilot.vim'
+
 " Some vim colourschemes to try
 Plug 'sainnhe/gruvbox-material', { 'as': 'gruvbox-material'}
 Plug 'sainnhe/everforest', { 'as': 'everforest'}
