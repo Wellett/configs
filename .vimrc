@@ -27,7 +27,7 @@ set softtabstop=4
 set expandtab
 
 "Automatically source the changes to vimrc when I save and close?
-autocmd bufwritepost .vimrc source $MYVIMRC
+" autocmd bufwritepost .vimrc source $MYVIMRC
 
 "Vimwiki indents
 let g:vimwiki_folding='custom'
@@ -64,8 +64,24 @@ set splitbelow
 nnoremap KN :cn<CR>
 nnoremap KP :cp<CR>
 
-"command to use make from cmd
-nnoremap <F5> :set makeprg=cmd.exe\ /C\ make<CR>
+" Deprecated: command to use make from cmd
+" nnoremap <F5> :set makeprg=cmd.exe\ /C\ make<CR>
+
+" keymapping to enable/disable Copilot
+nnoremap <F4> :call ToggleCopilot()<CR>
+inoremap <F4> <Esc>:call ToggleCopilot()<CR>i
+
+function! ToggleCopilot()
+    if copilot#Enabled()
+        Copilot disable
+    else
+        Copilot enable
+    endif
+    Copilot status
+endfunction
+
+" TODO Map Tab to copilot completion if Copilot is active
+" This fixes conflicts with other plugins that map tab
 
 "Automate installation of Vim Plug
 "Might need some tweaks
