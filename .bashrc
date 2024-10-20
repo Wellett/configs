@@ -119,6 +119,9 @@ fi
 
 export PATH=$PATH:/home/wellett/.local/bin
 
+# Set vim as default editor
+export EDITOR=vim
+
 # Alias for a rather elegant way to keep dotfiles in a headless repo
 # For now keeping this here because it is general for all systems
 # .bash_aliases is being used for specific system aliases
