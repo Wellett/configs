@@ -140,6 +140,10 @@ set t_Co=256
 set background=dark
 "A couple of interesting options: focuspoint, kuroi...
 colorscheme sonokai
+" Spellcheck settings
+set spelllang=en_gb
+highlight SpellBad ctermfg=red
+autocmd FileType markdown,text setlocal spell
 
 "Vim Airline Theme
 let g:airline_theme='jellybeans'
