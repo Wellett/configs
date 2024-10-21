@@ -80,8 +80,10 @@ function! ToggleCopilot()
     Copilot status
 endfunction
 
-" TODO Map Tab to copilot completion if Copilot is active
-" This fixes conflicts with other plugins that map tab
+" disable vimwiki for other synctax e.g. markdown
+" This prevents vimwiki from interfering with copilot in markdown files
+let g:vimwiki_ext2syntax = {}
+
 
 "Automate installation of Vim Plug
 "Might need some tweaks

@@ -14,3 +14,4 @@ Issue #1  27Aug2021
         fetch = +refs/heads/*:refs/remotes/origin/*
  - Solution to stop this from affecting all repos unkown 
 
+
