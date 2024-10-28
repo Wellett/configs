@@ -126,6 +126,9 @@ Plug 'dense-analysis/ale'
 " Python Code Formatter
 Plug 'psf/black', {'branch': 'stable'}
 
+" Syntax highlighting for justfiles
+Plug 'NoahTheDuke/vim-just'
+
 " Github Copilot
 Plug 'github/copilot.vim'
 
