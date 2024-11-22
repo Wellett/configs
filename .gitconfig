@@ -1,6 +1,6 @@
 [user]
     name = William Ellett
-	email = williamjellett@gmail.com
+	email = william.ellett@sensorfact.nl
 [core] 
     editor = vim
     excludesfile = ~/.global_gitignore
