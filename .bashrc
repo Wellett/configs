@@ -133,3 +133,5 @@ alias wiki='git -C $HOME/vimwiki'
 
 
 . "$HOME/.cargo/env"
+
+source '/home/wellett/.bash_completions/firmware-update.sh'
